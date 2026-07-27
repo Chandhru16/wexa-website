@@ -1,0 +1,528 @@
+/* ==========================================
+   WEXA Premium Animations
+========================================== */
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global Transition */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* ==========================================
+   Fade Animations
+========================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* ==========================================
+   Fade Up
+========================================== */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.fade-up {
+    animation: fadeUp .8s ease forwards;
+}
+
+/* ==========================================
+   Fade Down
+========================================== */
+
+@keyframes fadeDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.fade-down {
+    animation: fadeDown .8s ease;
+}
+
+/* ==========================================
+   Fade Left
+========================================== */
+
+@keyframes fadeLeft {
+
+    from {
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-left{
+
+    animation:fadeLeft .9s ease;
+
+}
+
+/* ==========================================
+   Fade Right
+========================================== */
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-right{
+
+    animation:fadeRight .9s ease;
+
+}
+
+/* ==========================================
+   Zoom In
+========================================== */
+
+@keyframes zoomIn{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.zoom-in{
+
+    animation:zoomIn .8s ease;
+
+}
+
+/* ==========================================
+   Floating Effect
+========================================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.float{
+
+    animation:floating 4s infinite ease-in-out;
+
+}
+
+/* ==========================================
+   Pulse
+========================================== */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+/* ==========================================
+   Rotate
+========================================== */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.rotate{
+
+    animation:rotate 12s linear infinite;
+
+}
+
+/* ==========================================
+   Hero Image Animation
+========================================== */
+
+.hero img{
+
+    animation:floating 5s infinite;
+
+}
+
+/* ==========================================
+   Card Hover
+========================================== */
+
+.card{
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+   Service Cards
+========================================== */
+
+.service-card{
+
+    transition:.4s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-15px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+   Buttons
+========================================== */
+
+button,
+
+.btn{
+
+    transition:.3s;
+
+}
+
+button:hover,
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================
+   Navbar
+========================================== */
+
+.navbar{
+
+    transition:.4s;
+
+}
+
+.navbar.scrolled{
+
+    background:#111;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+   Social Icons
+========================================== */
+
+.social-icons a{
+
+    transition:.4s;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-8px) scale(1.1);
+
+}
+
+/* ==========================================
+   Images
+========================================== */
+
+img{
+
+    transition:.5s;
+
+}
+
+img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================
+   Contact Form
+========================================== */
+
+input,
+
+textarea,
+
+select{
+
+    transition:.3s;
+
+}
+
+input:focus,
+
+textarea:focus,
+
+select:focus{
+
+    transform:scale(1.02);
+
+    box-shadow:0 0 10px rgba(0,123,255,.25);
+
+}
+
+/* ==========================================
+   Loading Spinner
+========================================== */
+
+.loader{
+
+    width:45px;
+
+    height:45px;
+
+    border:5px solid #ddd;
+
+    border-top:5px solid #007bff;
+
+    border-radius:50%;
+
+    animation:rotate 1s linear infinite;
+
+}
+
+/* ==========================================
+   Page Loader
+========================================== */
+
+.page-loader{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+/* ==========================================
+   Reveal Animation
+========================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:1s;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   Glass Hover
+========================================== */
+
+.glass{
+
+    backdrop-filter:blur(12px);
+
+    transition:.4s;
+
+}
+
+.glass:hover{
+
+    backdrop-filter:blur(20px);
+
+}
+
+/* ==========================================
+   Footer
+========================================== */
+
+footer a:hover{
+
+    color:#00bfff;
+
+}
+
+/* ==========================================
+   Premium Gradient Animation
+========================================== */
+
+@keyframes gradient{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+.gradient-bg{
+
+    background:linear-gradient(270deg,#0f172a,#2563eb,#7c3aed,#06b6d4);
+
+    background-size:600% 600%;
+
+    animation:gradient 12s ease infinite;
+
+}
