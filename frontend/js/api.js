@@ -3,10 +3,10 @@
 // ==========================================
 
 // Development
-const API_BASE_URL = "http://localhost:5000/api";
+//const API_BASE_URL = "http://localhost:5000/api";
 
 // Production (Uncomment when deployed)
-// const API_BASE_URL = "https://api.wexa.in/api";
+const API_BASE_URL = "https://wexa-website.onrender.com/api";
 
 // ==========================================
 // Generic API Request
